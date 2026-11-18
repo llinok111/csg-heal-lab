@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>csg-heal-lab — constructive repair of CSG results</title>
+<style>
+  html,body{margin:0;height:100%;background:#0b0e14;color:#e6edf3;font:14px/1.45 ui-monospace,SFMono-Regular,Menlo,monospace}
+  #app{display:flex;height:100%}
+  #view{flex:1}
+  aside{width:360px;padding:14px;border-left:1px solid #263041;overflow:auto}
+  h1{font-size:16px;margin:0 0 8px} .k{color:#7d8590} .v{color:#7ee787} .bad{color:#ff7b72}
+  select,button{background:#161b22;color:#e6edf3;border:1px solid #30363d;padding:4px 6px;margin:2px 0}
+  table{width:100%;border-collapse:collapse;font-size:12px} td{padding:2px 0;border-bottom:1px solid #21262d}
+</style>
+</head>
+<body>
+<div id="app"><div id="view"></div><aside>
+  <h1>csg-heal-lab</h1>
+  <div class="k">CSG result → constructive repair → node-recomputed checks</div>
+  <p><select id="solid"></select> <select id="defect"></select></p>
+  <p><button id="heal">Repair</button> <button id="raw">Show raw CSG</button></p>
+  <table id="hud"></table>
+  <p class="k" id="match"></p>
+</aside></div>
+<script type="importmap">
+{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"}}
+</script>
+<script type="module" src="./main.js"></script>
+</body>
+</html>

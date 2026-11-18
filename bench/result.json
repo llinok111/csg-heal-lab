@@ -1,0 +1,42 @@
+{
+  "generatedBy": "bench/bench.mjs",
+  "node": "v24.19.0",
+  "cases": 120,
+  "solids": 12,
+  "repair": {
+    "coldStartMs": 7.645,
+    "samples": 8,
+    "warmupRuns": 1,
+    "minMs": 142.501,
+    "medianMs": 149.404,
+    "p95Ms": 230.1,
+    "stddevMs": 29.137,
+    "rsdPct": 18.16,
+    "perCaseMedianMs": 1.245
+  },
+  "rays": {
+    "count": 250000,
+    "mismatchedRays": 40,
+    "baselineMismatchedRays": 1257,
+    "samples": 760290,
+    "crossings": 510290,
+    "totalMs": 5100.6,
+    "nsPerRay": 20402.4
+  },
+  "volume": {
+    "maxRelativeError": 1.6148698540002277e-16,
+    "tolerance": 1e-12
+  },
+  "firstRepair": {
+    "faces": 108,
+    "log": {
+      "welded": 0,
+      "degenerateRemoved": 0,
+      "duplicateRemoved": 0,
+      "tSplits": 0,
+      "holesFilled": 0,
+      "flippedFaces": 0,
+      "flippedComponents": 0
+    }
+  }
+}
